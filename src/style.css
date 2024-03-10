@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-backgrond: #18181B;
+    --cor1: #1D4ED8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-backgrond);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor1);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #FFF;
+    background-color: var(--cor1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1E40AF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px var(--cor1);
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: #CCC;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: #FFF;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #FFF;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: #CCC;
+}
+
+header .image img {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 50rem;
+    border: 2px solid #FFF;
+}
+
+section .header {
+    margin-bottom: 1rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.certificate {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.certificate .card {
+    background-color: #27272A;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.certificate .card:hover {
+    background-color: #323232;
+    border-color: #FFF;
+}
+
+.certificate .card span {
+    display: inline-block;
+    background-color: var(--cor1);
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.certificate .card h4 {
+    margin-bottom: 0.5rem;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.certificate .card p {
+    color: #CCC;
+    margin-bottom: 1rem;
+}
+
+.certificate .card a {
+    color: #FFF;
+    transition: all 0.3s ease;
+}
+
+.certificate .card a:hover {
+    color: var(--cor1);
+}
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #CCC;
+}
+
+.project {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.project .card {
+    padding: 3rem 2rem;
+    background-color: #27272A;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.project .card:hover {
+    background-color: #323232;
+    border-color: #FFF;
+}
+
+.project .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.project .card h4 {
+    margin-bottom: 1rem;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.project .card h3 {
+    color: #FFF;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #FFF;
+}
+
+.project .card p {
+    color: #FFF;
+    margin-bottom: 0.75rem;
+}
+
+.project .card p i {
+    color: #CCC;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.project .card .btn-proj {
+    color: #FFF;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    text-align: center;
+    border-radius: 50rem;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.project .card .btn-proj:hover {
+    background-color: #1E40AF;
+    border-color: #1E40AF;
+}
+
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(2, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo {
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .column p {
+    color: #CCC;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+    color: #FFF;
+    background-color: var(--cor1);
+    border-color: var(--cor1);
+}
+
+footer .column h4 {
+    color: #FFF;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a {
+    display: block;
+    color: #CCC;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover {
+    color: var(--cor1);
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #FFF;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    color: #CCC;
+    background-color: transparent;
+    border-radius: 50rem;
+    border: 1px solid #CCC;
+    padding: 2.5px 5px;
+    font-size: 2.25rem;
+    transition: all 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    color: #FFF;
+    background-color: var(--cor1);
+    border-color: var(--cor1);
+}
