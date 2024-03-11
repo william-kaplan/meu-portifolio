@@ -53,7 +53,7 @@
         display: none;
     }
 
-    nav.links {
+    nav .links {
         gap:0.75rem;
         margin:auto;
     }
