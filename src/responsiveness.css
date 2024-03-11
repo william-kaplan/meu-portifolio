@@ -9,7 +9,7 @@
         display: none;
     }
 
-    nav-logo {
+    .nav-logo {
         display: none;
     }
 
@@ -49,7 +49,7 @@
 
 @media (width < 600px) {
 
-    nav-logo {
+    .nav-logo {
         display: none;
     }
 
