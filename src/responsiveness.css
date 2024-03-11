@@ -9,6 +9,10 @@
         display: none;
     }
 
+    nav-logo {
+        display: none;
+    }
+
     .container {
         padding: 3rem 2rem;
     }
